@@ -16,6 +16,18 @@
   <p>I had a wonderful time on Zork, thanks to Zee-zee-zee and its family. They were the friendliest aliens I ever met. I promised to visit them again someday, and they promised to keep in touch. We exchanged some gifts and hugs, and then I said goodbye and boarded my spaceship.</p>
   <p>I took off and waved to them from the window. They waved back and said, "Zee-zee-zee". I smiled and said, "Zee-zee-zee". Then I set course for my next destination, wondering what other amazing things I would see and who else I would meet.</p>
   <p>That's the end of my story. I hope you liked it. Thank you for visiting, and have a great day!</p>
+
+<h1>The current date is:</h1>
+  <p id="date"></p>
+  <script>
+    // Create a new Date object
+    var date = new Date();
+    // Get the date as a string
+    var displayDate = date.toLocaleDateString();
+    // Set the content of the element with id="date"
+    document.getElementById("date").innerHTML = displayDate;
+  </script>
+  
 </body>
 </html>
 
