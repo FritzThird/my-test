@@ -4,6 +4,8 @@ body {
 
 .sidebar {
 		grid-area: sidebar;
+		background-color: #ccc;
+  color: #444;
 	}
 
 	.sidebar2 {
@@ -70,9 +72,4 @@ body {
 .header,
 .footer {
   background-color: #999;
-}
-
-.sidebar2 {
-  background-color: #ccc;
-  color: #444;
 }
