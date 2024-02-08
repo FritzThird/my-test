@@ -5,7 +5,8 @@ body {
 .wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(2, auto-fit, minmax(200px, 1fr));
+  /* Default to single column for mobile-first approach */
+  grid-template-columns: 1fr;
   background-color: #fff;
   color: #444;
 }
@@ -18,8 +19,10 @@ body {
   font-size: 150%;
 }
 
-@media screen and (max-width: 600px) {
+/* Media query for larger screens */
+@media screen and (min-width: 601px) {
   .wrapper {
-    grid-template-columns: 1fr; /* This will make the grid collapse to a single column on small screens */
+    /* Specify exactly two columns for screens wider than 600px */
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 }
