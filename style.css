@@ -8,10 +8,6 @@ body {
   color: #444;
 	}
 
-	.sidebar2 {
-		grid-area: sidebar2;
-	}
-
 	.content {
 		grid-area: content;
 	}
