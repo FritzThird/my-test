@@ -17,3 +17,9 @@ body {
   padding: 20px;
   font-size: 150%;
 }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr; /* This will make the grid collapse to a single column on small screens */
+  }
+}
