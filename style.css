@@ -22,12 +22,9 @@ body {
 		grid-area: footer;
 	}
 
-	.wrapper {
-		background-color: #fff;
-		color: #444;
-	}
-
   .wrapper {
+			 background-color: #fff;
+		  color: #444;
     display: grid;
     grid-gap: 1em;
     grid-template-areas:
