@@ -21,7 +21,3 @@ body {
   width: 100%;
   height: auto;
 }
-
-.box.c {
-  grid-column: span 1 / -1;
-  grid-row: 2 / 3;
