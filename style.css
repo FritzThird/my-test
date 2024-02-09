@@ -10,7 +10,7 @@ body {
   row-gap: 20px
 }
 
-.box {
+.item {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
@@ -18,7 +18,7 @@ body {
   font-size: 150%;
 }
 
-.box img {
+.item img {
   width: 100%;
   height: auto;
 }
