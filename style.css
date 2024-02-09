@@ -31,3 +31,6 @@ body {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 }
+
+.box.d {
+  grid-column: span2;
