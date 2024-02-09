@@ -33,4 +33,5 @@ body {
 }
 
 .box.d {
+  grid-column: 1;
   grid-row: 3 / span2;
