@@ -40,4 +40,4 @@ body {
 
 .box.c {
   grid-column: span 1 / -1;
-  grid-row: 2
+  grid-row: 2 / 3;
