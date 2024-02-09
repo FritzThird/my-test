@@ -2,40 +2,23 @@ body {
   margin: 40px;
 }
 
-.container {
+.parent {
+  padding: 20px
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto auto;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 10px;
-  /* Default to single column for mobile-first approach */
-  grid-template-columns: 1fr;
-  background-color: #fff;
-  color: #444;
+  grid-template-columns: 1fr 1fr
 }
 
 .box {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
+  / * padding: 20px; */
   font-size: 150%;
 }
 
 .box img {
   width: 100%;
   height: auto;
-}
-
-/* Media query for larger screens */
-@media screen and (min-width: 601px) {
-  .wrapper {
-    /* Specify exactly two columns for screens wider than 600px */
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-  }
 }
 
 .box.c {
