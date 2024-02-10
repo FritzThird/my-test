@@ -16,7 +16,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/*
+
 .item {
   background-color: #444;
   color: #fff;
@@ -24,7 +24,7 @@ body {
   padding: 20px;
   font-size: 150%;
 }
-*/
+
 .item img {
   width: 50%;
   height: auto;
