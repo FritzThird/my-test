@@ -29,3 +29,7 @@ body {
   height: auto;
   border-radius: 20px;
 }
+
+.item-3 {
+  grid-row: span 2;
+}
