@@ -14,6 +14,7 @@ body {
   .container {
     grid-template-columns: 1fr;
   }
+}
 
 .item {
   background-color: #444;
