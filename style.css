@@ -5,22 +5,21 @@ body {
 .container {
   padding: 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Default to two columns */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: limegreen;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 600px) {
   .container {
-    grid-template-columns: 1fr; /* Collapse to one column */
+    grid-template-columns: 1fr;
   }
 }
 
 .item {
   background-color: #444;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
   font-size: 150%;
 }
