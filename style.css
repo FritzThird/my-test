@@ -32,4 +32,9 @@ body {
 
 .item-3 {
   grid-row: span 2;
+  background-color: #444;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 150%;
 }
