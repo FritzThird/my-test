@@ -32,7 +32,7 @@ body {
 
 .item-3 {
   grid-row: span 2;
-  background-color: #444;
+  background-color: black;
   color: #fff;
   border-radius: 20px;
   padding: 20px;
