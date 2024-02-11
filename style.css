@@ -12,8 +12,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr;
+  .item {
+    padding: 10px; /* Or some alternate, smaller value */
   }
 }
 
@@ -27,10 +27,18 @@ body {
 
 .item img {
   width: 100%;
-  height: auto;
+  height: auto; 
+  max-width: 100%; /* Prevent images from expanding beyond their container */
   border-radius: 20px;
 }
-/*
+
+.item {
+  word-break: break-word; /* Allow long words to break to new lines */
+  hyphens: auto; /* Optionally enable hyphenation */
+}
+
+
+
 .item-3 {
   grid-row: 2 / span: 2;
   background-color: black;
@@ -48,4 +56,3 @@ body {
   padding: 20px;
   font-size: 150%;
 }
-*/
