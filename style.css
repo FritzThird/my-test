@@ -34,21 +34,7 @@ body {
   max-width: 100%; 
   border-radius: 20px;
 }
-/*
-.item-3 {
-  grid-row: 2 / span: 2;
-  background-color: black;
-  color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 150%;
-}
 
-.item-4 {
-  grid-row: 3;
-  background-color: black;
-  color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 150%;
-} */
+.item:nth-child(3) {
+  grid-column: span 2; 
+}
