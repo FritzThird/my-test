@@ -20,13 +20,15 @@ body {
   }
  }
 
-/* Let's target the larger layout where you want the wide item */
 @media (min-width: 601px) { /* Adjust the breakpoint if needed */ 
   .item:nth-child(3) {
     grid-column: span 2; 
   }
 }
 
+.item:nth-child(1) {
+  text-align: center;
+}
 
 .item {
   background-color: #444;
