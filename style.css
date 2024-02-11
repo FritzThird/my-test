@@ -27,8 +27,12 @@ body {
 }
 
 .item-1 {
+  display: grid;
+  align-items: center;
+  justify-content: center; 
   text-align: center;
 }
+
 
 .item {
   background-color: transparent;
