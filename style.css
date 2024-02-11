@@ -36,5 +36,5 @@ body {
 }
 
 .item:nth-child(3) {
-  grid-column: span 2; 
+  grid-column: auto; 
 }
