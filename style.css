@@ -26,11 +26,11 @@ body {
 }
 
 .item img {
-  width: 50%;
+  width: 100%;
   height: auto;
   border-radius: 20px;
 }
-
+/*
 .item-3 {
   grid-row: 2 / span: 2;
   background-color: black;
@@ -39,7 +39,7 @@ body {
   padding: 20px;
   font-size: 150%;
 }
-
+*/
 .item-4 {
   grid-row: 3;
   background-color: black;
