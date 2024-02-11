@@ -1,3 +1,6 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  ```
+
+```css
 body {
   margin: 40px;
 }
@@ -6,14 +9,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding: 0px;
+  padding: 0px; 
   gap: 20px;
   background-color: limegreen;
 }
 
 @media (max-width: 600px) {
-  .item {
-    padding: 10px; /* Or some alternate, smaller value */
+  .container {
+    grid-template-columns: 1fr;
+    padding: 10px; 
   }
 }
 
@@ -23,18 +27,15 @@ body {
   border-radius: 20px;
   padding: 20px;
   font-size: 150%;
+  word-break: break-word; 
+  hyphens: auto; 
 }
 
 .item img {
   width: 100%;
-  height: auto; 
-  max-width: 100%; /* Prevent images from expanding beyond their container */
+  height: auto; 
+  max-width: 100%; 
   border-radius: 20px;
-}
-
-.item {
-  word-break: break-word; /* Allow long words to break to new lines */
-  hyphens: auto; /* Optionally enable hyphenation */
 }
 /*
 .item-3 {
