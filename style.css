@@ -8,7 +8,7 @@ body {
   grid-template-rows: auto;
   padding: 0px; 
   gap: 20px;
-  background-color: limegreen;
+  background-color: transparent;
 }
 
 /* ... Other styles ... */
