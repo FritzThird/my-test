@@ -36,15 +36,13 @@ body {
   word-break: break-word; /* Allow long words to break to new lines */
   hyphens: auto; /* Optionally enable hyphenation */
 }
-
+/*
 .item-3 {
   grid-row: 2 / span: 2;
   background-color: black;
   color: #fff;
-  /*
   border-radius: 20px;
   padding: 20px;
-  */
   font-size: 150%;
 }
 
@@ -52,9 +50,7 @@ body {
   grid-row: 3;
   background-color: black;
   color: #fff;
-  /*
   border-radius: 20px;
   padding: 20px;
-  */
   font-size: 150%;
-}
+} */
