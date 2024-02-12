@@ -58,6 +58,14 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Add a margin to the content to avoid overlapping with the fixed menu */
+.content {
+  margin-top: 50px; /* Adjust this value based on the height of your menu */
 }
 
 /* Style navigation menu links */
