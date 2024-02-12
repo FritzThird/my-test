@@ -96,6 +96,12 @@ body {
 .show-menu .hamburger-menu .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+/*
 .show-menu .nav-links { 
+  display: block;
+}
+*/
+/* Instead of just .show-menu .nav-links */
+header .show-menu .nav-links { 
   display: block;
 }
