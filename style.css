@@ -61,7 +61,7 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  z-index: 1000; /* above content */
+  z-index: 999; /* above content */
 }
 
 /* Add a margin to the content to avoid overlapping with the fixed menu */
@@ -85,6 +85,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 1000
 }
 
 /* Add a grey background color on mouse-over */
@@ -97,7 +98,6 @@ body {
 .active {
   background-color: #04AA6D;
   color: white;
-  z-index: 1;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
