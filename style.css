@@ -91,13 +91,13 @@ body {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: mocha;
+  background-color: #ddd;
   color: black;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
+  background-color: mocha;
   color: white;
 }
 
