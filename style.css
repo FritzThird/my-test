@@ -54,54 +54,56 @@ body {
 /* =================
    Navigation Menu
    ================= */
-  
-.hamburger-menu {
-  display: block;
-  position: relative;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.bar {
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Navigation List */
-.nav-links {
-  list-style: none;
-  display: none; /* Initially hide the menu */
-}
-
-.nav-links li {
-  padding: 15px 0;
-}
-
-.nav-links a {
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #fff;
+  font-size: 17px;
+  display: block;
 }
 
-/* Responsive: Display menu on click */
-.show-menu .hamburger-menu .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.show-menu .hamburger-menu .bar:nth-child(2) {
-  opacity: 0;
-}
-.show-menu .hamburger-menu .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-/*
-.show-menu .nav-links { 
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
   display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-*/
-/* Instead of just .show-menu .nav-links */
-header .show-menu .nav-links { 
-  display: block;
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#myLinks {
+  display: none;
+}
+
+/* Show the links when the hamburger menu is clicked */
+@media screen and (min-width: 600px) {
+  .topnav a, .topnav #myLinks {
+    display: inline;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+}
+/* ===================
+   Navigation Menu End
+   =================== */
