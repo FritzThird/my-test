@@ -97,6 +97,7 @@ body {
 .active {
   background-color: #04AA6D;
   color: white;
+  z-index: 1;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
