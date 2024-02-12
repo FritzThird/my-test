@@ -10,9 +10,6 @@ body {
 h1{
   color: mocha;
   margin: 16px 0;
-  
-img{
-  margin: 0;
 
 .container {
   display: grid;
