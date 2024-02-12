@@ -51,9 +51,9 @@ body {
   border-radius: 20px;
 }
 
-/* =================
+/* ===============
    Navigation Menu
-   ================= */
+   =============== */
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
@@ -91,7 +91,7 @@ body {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: mocha;
   color: black;
 }
 
