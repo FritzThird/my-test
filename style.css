@@ -65,10 +65,10 @@ body {
   z-index: 999; /* above content */
 }
 
-/* Add a margin to the content to avoid overlapping with the fixed menu */
+/* Add a margin to the content to avoid overlapping with the fixed menu
 .content {
-  margin-top: 50px; /* Adjust this value based on the height of your menu */
-}
+  margin-top: 50px; Adjust this value based on the height of your menu
+}*/
 
 /* Style navigation menu links */
 .topnav a {
