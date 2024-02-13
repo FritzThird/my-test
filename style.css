@@ -3,7 +3,7 @@ body {
 }
   
 h1, h2 {
-  color: forest;
+  color: #0B6623;
   /*
   margin: 16px 0; */
 }
@@ -103,7 +103,7 @@ h1, h2 {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: fern;
+  background-color: #4F7942;
   color: white;
 }
 
