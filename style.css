@@ -18,6 +18,8 @@ h1, h2 {
   padding: 0px; 
   gap: 10px;
   background-color: transparent;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* ... Other styles ... */
