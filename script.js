@@ -13,3 +13,13 @@ function myFunction() {
     var year = new Date().getFullYear();
     document.getElementById('year').textContent = year;
   });
+  
+// pop-up
+function closePopup() {
+  document.getElementById("popup-message").style.display = "none";
+}
+
+// Display the popup on page load
+window.onload = function() {
+  document.getElementById("popup-message").style.display = "block";
+}
