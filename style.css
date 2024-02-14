@@ -124,3 +124,10 @@ h1, h2 {
 /* ===================
    Navigation Menu End
    =================== */
+  
+/* Google font */
+  .barriecito-regular {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
