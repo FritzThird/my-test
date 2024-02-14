@@ -1,5 +1,8 @@
 body {
-  margin: 50px 20px;
+    margin: 50px 20px;
+    font-family: "Barriecito", system-ui; /* Apply Barriecito font */
+    font-weight: 400; /* Default to regular font weight */
+    font-style: normal;
 }
   
 h1, h2 {
