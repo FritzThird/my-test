@@ -1,66 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Nav Bar</title>
   <style>
-    nav {
-      background-color: #f0f0f0;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 10px;
-    }
-
-    ul {
-      list-style: none;
+    /* Add some basic styles */
+    * {
       margin: 0;
       padding: 0;
-      text-align: center; /* Center items horizontally */
+      box-sizing: border-box;
     }
 
-    li {
-      display: inline-block;
-      margin: 0 15px;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
     }
 
-    a {
+    /* Define some variables for colors and sizes */
+    :root {
+      --nav-bg-color: #333;
+      --nav-link-color: #fff;
+      --nav-link-hover-color: #04AA6D;
+      --nav-height: 60px;
+      --nav-breakpoint: 700px;
+    }
+
+    /* Style the nav bar container */
+    .nav-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--nav-height);
+    }
+
+    /* Style the nav bar logo */
+    .nav-logo {
+      color: var(--nav-link-color);
       text-decoration: none;
-      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
 
-    /* Smaller Screen Styles (iPad and below) */
-    @media (max-width: 700px) { 
-  nav ul {
-    text-align: left; 
-  }
+    /* Style the nav bar links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
 
-  li {
-    display: block; 
-    margin: 5px 0;
-  }
+    .nav-link {
+      color: var(--nav-link-color);
+      text-decoration: none;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
 
-  /* Add this section for navigation font sizing */
-  nav a { 
-    font-size: 24px; 
-  }
-}
+    .nav-link:hover {
+      color: var(--nav-link-hover-color);
+    }
 
-      li {
-        display: block; /* Stack navigation items vertically */
-        margin: 5px 0;
+    /* Style the nav bar scroll button */
+    .nav-scroll {
+      display: none;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: var(--nav-bg-color);
+      color: var(--nav-link-color);
+      cursor: pointer;
+    }
+
+    .nav-scroll:focus {
+      outline: none;
+    }
+
+    .nav-scroll::before {
+      content: "\2039"; /* left-pointing angle quotation mark */
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+    }
+
+    .nav-scroll.right::before {
+      content: "\203A"; /* right-pointing angle quotation mark */
+    }
+
+    /* Use media queries to make the nav bar responsive */
+    @media screen and (max-width: var(--nav-breakpoint)) {
+      /* Hide the nav bar links and show the scroll button on small screens */
+      .nav-links {
+        overflow-x: auto;
+        width: 0;
+        transition: width 0.3s ease-in-out;
+      }
+
+      .nav-scroll {
+        display: block;
+      }
+
+      /* When the nav bar is open, show the nav bar links and hide the scroll button */
+      .nav-open .nav-links {
+        width: 60%;
+      }
+
+      .nav-open .nav-scroll {
+        display: none;
       }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+  <!-- Create a nav element with the class "nav" and the id "nav" -->
+  <nav class="nav" id="nav">
+    <!-- Create a div element with the class "nav-container" -->
+    <div class="nav-container">
+      <!-- Create an anchor element with the class "nav-logo" and the href attribute pointing to the home page -->
+      <a href="/" class="nav-logo">Website Name</a>
+      <!-- Create a button element with the class "nav-scroll left" and the id "nav-scroll-left" -->
+      <button class="nav-scroll left" id="nav-scroll-left"></button>
+      <!-- Create a ul element with the class "nav-links" and the id "nav-links" -->
+      <ul class="nav-links" id="nav-links">
+        <!-- Create four li elements with the class "nav-link-item" -->
+        <li class="nav-link-item">
+          <!-- Create an anchor element with the class "nav-link" and the href attribute pointing to the about page -->
+          <a href="/about" class="nav-link">About</a>
+        </li>
+        <li class="nav-link-item">
+          <!-- Create an anchor element with the class "nav-link" and the href attribute pointing to the blog page -->
+          <a href="/blog" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-link-item">
+          <!-- Create an anchor element with the class "nav-link" and the href attribute pointing to the careers page -->
+          <a href="/careers" class="nav-link">Careers</a>
+        </li>
+        <li class="nav-link-item">
+          <!-- Create an anchor element with the class "nav-link" and the href attribute pointing to the contact page -->
+          <a href="/contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <!-- Create a button element with the class "nav-scroll right" and the id "nav-scroll-right" -->
+      <button class="nav-scroll right" id="nav-scroll-right"></button>
+    </div>
   </nav>
-
-  </body>
+  <!-- Add some content below the nav bar -->
+  <div style="height: 2000px; padding-top: var(--nav-height);">
+    <h1>Responsive Nav Bar</h1>
+    <p>This is an example of a responsive nav bar without a hamburger menu.</p>
+    <p>Resize the browser window to see how it works.</p>
+  </div>
+  <!-- Add a script element with the src attribute pointing to the JavaScript file -->
+  <script src="script.js"></script>
+</body>
 </html>
