@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hamburger Menu</title>
-    <link rel="stylesheet" href="about.css">
+  <title>Responsive Nav Bar</title>
+  <style>
+    nav {
+      background-color: #f0f0f0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center; /* Center items horizontally */
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Smaller Screen Styles (iPad and below) */
+    @media (max-width: 700px) { 
+      nav ul {
+        text-align: left; /* Optional: Aligns to the left if you want */
+      }
+
+      li {
+        display: block; /* Stack navigation items vertically */
+        margin: 5px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Mars Rules!</div>
-                <button class="hamburger" id="hamburger-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <script src="script_2.js"></script>
-</body>
+  </body>
 </html>
